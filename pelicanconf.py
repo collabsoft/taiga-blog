@@ -7,7 +7,7 @@ DEBUG=1
 AUTHOR = 'Taiga'
 AUTHOR_EMAIL = 'support@taiga.io'
 SITENAME = 'Taiga Blog'
-SITEURL = 'https://blog.taiga.io'
+#SITEURL = 'https://blog.taiga.io'
 SITESUBTITLE = 'Taiga is a project management platform for startups and agile developers & designers'
 
 PATH = 'content'
@@ -28,15 +28,18 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 # Blogroll
 LINKS = (('Taiga.io', 'https://taiga.io'),
          ('Mailing list', 'https://groups.google.com/forum/#!forum/taigaio'),
-         ('Kaleidos', 'http://www.kaleidos.net/'),
-         ('ΠWEEK', 'http://piweek.com/'),
+         ('Kaleidos', 'https://www.kaleidos.net/'),
+         ('Penpot', 'https://penpot.app/'),
 )
 
 # Social widget
-SOCIAL = (('Twitter', 'http://twitter.com/taigaio'),
+SOCIAL = (('Twitter', 'https://twitter.com/taigaio'),
           ('Github', 'https://github.com/taigaio'),
-          ('Google+', 'https://plus.google.com/+TaigaIo'),
 )
+
+# Social metatags plugin settings
+TWITTER_META_SITE = "@taigaio"
+
 
 DEFAULT_PAGINATION = 10
 
@@ -64,10 +67,10 @@ DISQUS_SITENAME = "taiga-blog"
 
 #Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['gravatar', 'sitemap', 'open_graph']
+PLUGINS = ['gravatar', 'sitemap', 'open_graph', 'twitter_meta']
 
 
-PRIVACY_POLICY_URL = "http://taiga.io/privacy-policy"
+PRIVACY_POLICY_URL = "https://taiga.io/privacy-policy"
 
 SITEMAP = {
     "format": "xml",

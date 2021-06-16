@@ -5,8 +5,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: $blackish;
     font-weight: normal;
+    font-size: .9rem;
     a {
         font-weight: inherit;
     }
@@ -16,22 +16,22 @@ h6 {
 %xsmall {font-size: .5rem;}
 %small {font-size: .8rem;}
 %medium {font-size: 1rem;}
-%large {font-size: 1.2rem;}
+%large {font-size: 1.3rem;}
 %larger {font-size: 1.5rem;}
 %xlarge {font-size: 2rem;}
 %xxlarge {font-size: 3rem;}
 
 // __Font Types__ //
 %light {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
 }
 %text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
 %bold {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
 %taiga {font-family: 'taiga';}
@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-    @extend %xxlarge;
+    @extend %xlarge;
     line-height: 2.4rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -52,13 +52,13 @@ h2 {
 
 h3 {
     @extend %larger;
-    @extend %light;
+    @extend %bold;
     margin-bottom: 1rem;
 }
 
 h4 {
     @extend %large;
-    @extend %text;
+    @extend %bold;
     margin-bottom: 1rem;
 }
 
@@ -80,6 +80,12 @@ strong {
 
 small {
     @extend %small;
+}
+
+figcaption {
+    line-height: 1.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
 }
 
 hr {
